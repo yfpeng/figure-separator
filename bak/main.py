@@ -7,7 +7,7 @@ Bulk figure extractor
 '''
 
 import tensorflow as tf
-from code.utils import postprocess,preprocess,load_graph
+from figure_separator.figure_separator import postprocess, preprocess, load_graph
 import os
 import cv2
 import argparse
@@ -16,7 +16,7 @@ import json
 #Parse arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("--images", type=str, help=u"the directory that has figures",required=True)
-parser.add_argument("--model",default="./data/figure-sepration-model-submitted-544.pb", type=str, help=u"model pb file. Default is ./data/figure-sepration-model-submitted-544.pb")
+parser.add_argument("--model",default="./data/figure-separation-model-submitted-544.pb", type=str, help=u"model pb file. Default is ./data/figure-separation-model-submitted-544.pb")
 parser.add_argument("--thresh",default=0.5, type=float, help=u"sub-figuere detection threshold. Default is 0.5")
 parser.add_argument("--output",default="./results", type=str, help=u"output directory ./results")
 parser.add_argument("--annotate",default=0, type=int, help=u"save annotation to the image or not. 1 is yes, 0 is no. Default is 0.")
