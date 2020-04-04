@@ -3,7 +3,8 @@
 ## Acknowledgement
 
 This repository was forked from [https://github.com/apple2373/figure-separator](https://github.com/apple2373/figure-separator)
-If you find this tool useful, please cite the original paper: 
+If you find this tool useful, please cite the original paper:
+
 ```
 @inproceedings{tsutsui2017data,
   title={A data driven approach for compound figure separation using convolutional neural networks},
@@ -34,10 +35,10 @@ The model can be found at
 
 ### Separate compound figures
 ```sh
-python split_figure.py --split --output ./results imgs/* 
+$ python split_figure.py --split --output ./results imgs/* 
 ```
 See the `results` directory. Output json is something like:
-```
+```json
 [
  {
  "x": (x coordinate of left top point of the sub-figure),
