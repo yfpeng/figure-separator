@@ -29,16 +29,16 @@ $ pip install -r requirements.txt
 
 The model can be found at
 
-- Google Drive: [https://drive.google.com/open?id=0B046sNk0DhCDems2am5YV3NLeDQ](https://drive.google.com/open?id=0B046sNk0DhCDems2am5YV3NLeDQ)  
-- Dropbox: [https://www.dropbox.com/s/xug7uw1rrq7ljy0/figure-sepration-model-submitted-544.pb?dl=0](https://www.dropbox.com/s/xug7uw1rrq7ljy0/figure-sepration-model-submitted-544.pb?dl=0)
-- GitHub: []()
+- [Google Drive](https://drive.google.com/open?id=0B046sNk0DhCDems2am5YV3NLeDQ)  
+- [Dropbox](https://www.dropbox.com/s/xug7uw1rrq7ljy0/figure-sepration-model-submitted-544.pb?dl=0)
+- [GitHub](https://github.com/yfpeng/figure-separator/releases/download/1.0/figure-separation-model-submitted-544.pb)
 
 ### Separate compound figures
 ```sh
 $ python split_figure.py --split --output ./results imgs/* 
 ```
 See the `results` directory. Output json is something like:
-```json
+```
 [
  {
  "x": (x coordinate of left top point of the sub-figure),
