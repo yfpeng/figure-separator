@@ -2,7 +2,7 @@
 
 ## Acknowledgement
 
-This repository was forked from [https://github.com/apple2373/figure-separator](https://github.com/apple2373/figure-separator)
+This repository was forked from [https://github.com/apple2373/figure-separator](https://github.com/apple2373/figure-separator).
 If you find this tool useful, please cite the original paper:
 
 ```
